@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "properties": {
+    "humio": {
+      "properties": {
+        "instances": {
+          "default": 1,
+          "description": "Number of instances to run. Should not exceed number of agenst",
+          "minimum": 1,
+          "type": "integer"
+        },
+        "cpus": {
+          "default": 0.1,
+          "description": "CPU shares to allocate to each Filebeat instance.",
+          "minimum": 0.01,
+          "type": "number"
+        },
+        "mem": {
+          "default": 32.0,
+          "description": "Memory (MB) to allocate to each Filebeat task.",
+          "minimum": 32.0,
+          "type": "number"
+        },
+        "name": {
+          "default": "humio",
+          "description": "Name for this Humio application",
+          "type": "string"
+        },
+        "dataDir": {
+          "default": "/var/humio/data",
+          "description": "Path of directory",
+          "type": "string"
+        },
+        "url": {
+          "description": "Humio url. i.e. https://go.humio.com:443",
+          "type": "string"
+        },
+        "dataspace": {
+          "description": "Name of Humio dataspace",
+          "type": "string"
+        },
+        "ingestToken": {
+          "description": "Humio ingest token",
+          "type": "string"
+        }
+      },
+      "required": [
+        "cpus",
+        "mem",
+        "instances",
+        "name",
+        "dataDir",
+        "url",
+        "dataspace",
+        "ingestToken"
+      ],
+      "type": "object"
+    }
+  },
+  "type": "object"
+}

@@ -3,22 +3,16 @@
   "properties": {
     "humio": {
       "properties": {
-        "instances": {
-          "default": 1,
-          "description": "Number of instances to run. Should not exceed number of agenst",
-          "minimum": 1,
-          "type": "integer"
-        },
         "cpus": {
-          "default": 0.1,
+          "default": 0.5,
           "description": "CPU shares to allocate to each Filebeat instance.",
-          "minimum": 0.01,
+          "minimum": 0.1,
           "type": "number"
         },
         "mem": {
-          "default": 32.0,
+          "default": 512.0,
           "description": "Memory (MB) to allocate to each Filebeat task.",
-          "minimum": 32.0,
+          "minimum": 512.0,
           "type": "number"
         },
         "name": {
@@ -31,8 +25,8 @@
           "description": "Path of directory",
           "type": "string"
         },
-        "url": {
-          "description": "Humio url. i.e. https://go.humio.com:443",
+        "host": {
+          "description": "Humio url. i.e. go.humio.com",
           "type": "string"
         },
         "dataspace": {
@@ -47,10 +41,9 @@
       "required": [
         "cpus",
         "mem",
-        "instances",
         "name",
         "dataDir",
-        "url",
+        "host",
         "dataspace",
         "ingestToken"
       ],

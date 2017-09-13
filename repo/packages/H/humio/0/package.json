@@ -1,5 +1,5 @@
 {
-  "packagingVersion": "2.0",
+  "packagingVersion": "3.0",
   "name": "humio",
   "framework": false,
   "description": "Log management for developers. Like tail and grep with aggregations and graphs built-in",

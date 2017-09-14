@@ -12,11 +12,11 @@
         "mem": {
           "default": 512.0,
           "description": "Memory (MB) to allocate to each Filebeat task.",
-          "minimum": 512.0,
+          "minimum": 256.0,
           "type": "number"
         },
         "name": {
-          "default": "humio",
+          "default": "humio-agent",
           "description": "Name for this Humio application",
           "type": "string"
         },

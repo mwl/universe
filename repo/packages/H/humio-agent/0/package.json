@@ -1,6 +1,6 @@
 {
   "packagingVersion": "3.0",
-  "name": "humio",
+  "name": "humio-agent",
   "framework": false,
   "description": "Log management for developers. Like tail and grep with aggregations and graphs built-in",
   "version": "0.1",

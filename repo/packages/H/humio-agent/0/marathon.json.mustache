@@ -3,7 +3,7 @@
   "instances": 1,
   "cpus": {{humio.cpus}},
   "mem": {{humio.mem}},
-  "cmd": "SERVER_PORT=$PORT0 jre1.8.0_131/bin/java -jar scheduler-0.1-alpha-1.jar",
+  "cmd": "SERVER_PORT=$PORT0 jre*/bin/java -Xms256m -Xmx{{humio.mem}}m -jar scheduler-*.jar",
   "constraints": [
     [
       "hostname", "UNIQUE"
@@ -22,11 +22,15 @@
       }
   ],
   "env": {
-    "HUMIO_EXECUTOR_URL": "https://github.com/humio/dcos2humio/releases/download/0.1-alpha-1/executor-0.1-alpha-1.jar",
-    "MESOS_COMMAND": "jre1.8.0_121/bin/java -jar executor-0.1-alpha-1.jar",
+    "HUMIO_EXECUTOR_URL": "{{resource.assets.uris.executor-jar}}",
     "HUMIO_HOST": "{{humio.host}}",
     "HUMIO_DATASPACE": "{{humio.dataspace}}",
     "HUMIO_INGESTTOKEN": "{{humio.ingestToken}}"
+  },
+  "labels": {
+    "DCOS_PACKAGE_FRAMEWORK_NAME": "{{humio.name}}",
+    "MARATHON_SINGLE_INSTANCE_APP": "true",
+    "DCOS_SERVICE_NAME": "{{humio.name}}"
   },
   "uris": [
     "{{resource.assets.uris.jre-tar-gz}}",

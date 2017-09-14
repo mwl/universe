@@ -3,28 +3,6 @@
   "properties": {
     "humio": {
       "properties": {
-        "cpus": {
-          "default": 0.5,
-          "description": "CPU shares to allocate to each Filebeat instance.",
-          "minimum": 0.1,
-          "type": "number"
-        },
-        "mem": {
-          "default": 512.0,
-          "description": "Memory (MB) to allocate to each Filebeat task.",
-          "minimum": 256.0,
-          "type": "number"
-        },
-        "name": {
-          "default": "humio-agent",
-          "description": "Name for this Humio application",
-          "type": "string"
-        },
-        "dataDir": {
-          "default": "/var/humio/data",
-          "description": "Path of directory",
-          "type": "string"
-        },
         "host": {
           "description": "Humio url. i.e. go.humio.com",
           "type": "string"
@@ -39,13 +17,49 @@
         }
       },
       "required": [
-        "cpus",
-        "mem",
-        "name",
-        "dataDir",
         "host",
         "dataspace",
         "ingestToken"
+      ],
+      "type": "object"
+    },
+    "service": {
+      "properties": {
+        "name": {
+          "default": "humio-agent",
+          "description": "Name for this Humio application",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "node": {
+      "properties": {
+        "cpus": {
+          "default": 0.5,
+          "description": "CPU shares to allocate to each Filebeat instance.",
+          "minimum": 0.1,
+          "type": "number"
+        },
+        "mem": {
+          "default": 512.0,
+          "description": "Memory (MB) to allocate to each Filebeat task.",
+          "minimum": 256.0,
+          "type": "number"
+        },
+        "datadir": {
+          "default": "/var/humio/data",
+          "description": "Path of directory",
+          "type": "string"
+        }
+      },
+      "required": [
+        "cpus",
+        "mem",
+        "datadir"
       ],
       "type": "object"
     }

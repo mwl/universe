@@ -2,8 +2,8 @@
   "assets": {
     "uris": {
       "jre-tar-gz": "https://downloads.mesosphere.com/java/jre-8u131-linux-x64.tar.gz",
-      "scheduler-jar": "https://github.com/humio/dcos2humio/releases/download/0.2-alpha-1/scheduler-0.2-alpha-1.jar",
-      "executor-jar": "https://github.com/humio/dcos2humio/releases/download/0.2-alpha-1/executor-0.2-alpha-1.jar",
+      "scheduler-jar": "https://github.com/humio/dcos2humio/releases/download/0.3-alpha-1/scheduler-0.3-alpha-1.jar",
+      "executor-jar": "https://github.com/humio/dcos2humio/releases/download/0.3-alpha-1/executor-0.3-alpha-1.jar",
       "filebeat-tar-gz": "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.5.2-linux-x86_64.tar.gz"
     }
   },

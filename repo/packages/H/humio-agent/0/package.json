@@ -3,7 +3,7 @@
   "name": "humio-agent",
   "framework": false,
   "description": "Log management for developers. Like tail and grep with aggregations and graphs built-in",
-  "version": "0.1",
+  "version": "0.3-alpha-1",
   "scm": "http://github.com/humio/dcos2humio",
   "maintainer": "martin@mwl.dk",
   "tags": ["log", "humio", "monitoring"],

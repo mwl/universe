@@ -1,7 +1,7 @@
 {
   "packagingVersion": "3.0",
   "name": "humio-agent",
-  "framework": false,
+  "framework": true,
   "description": "Log management for developers. Like tail and grep with aggregations and graphs built-in.\n\nMake sure you have created an account with a dataspace at https://humio.com",
   "version": "0.8-beta-1",
   "scm": "http://github.com/humio/dcos2humio",

@@ -4,8 +4,8 @@
       "jre-tar-gz": "https://downloads.mesosphere.com/java/jre-8u144-linux-x64.tar.gz",
       "scheduler-jar": "https://github.com/humio/dcos2humio/releases/download/0.8-beta-2/scheduler-0.8-beta-2.jar",
       "executor-jar": "https://github.com/humio/dcos2humio/releases/download/0.8-beta-2/executor-0.8-beta-2.jar",
-      "filebeat-tar-gz": "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.6.0-linux-x86_64.tar.gz",
-      "metricbeat-tar-gz": "https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-5.6.0-linux-x86_64.tar.gz"
+      "filebeat-tar-gz": "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.6.3-linux-x86_64.tar.gz",
+      "metricbeat-tar-gz": "https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-5.6.3-linux-x86_64.tar.gz"
     }
   },
   "images": {

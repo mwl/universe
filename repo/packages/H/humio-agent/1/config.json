@@ -39,15 +39,15 @@
     "node": {
       "properties": {
         "cpus": {
-          "default": 0.5,
+          "default": 0.1,
           "description": "CPU shares to allocate to each Filebeat instance.",
           "minimum": 0.1,
           "type": "number"
         },
         "mem": {
-          "default": 512.0,
+          "default": 128.0,
           "description": "Memory (MB) to allocate to each Filebeat task.",
-          "minimum": 256.0,
+          "minimum": 128.0,
           "type": "number"
         },
         "datadir": {

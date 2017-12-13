@@ -45,7 +45,7 @@
           "type": "number"
         },
         "mem": {
-          "default": 128.0,
+          "default": 512.0,
           "description": "Memory (MB) to allocate to each Filebeat task.",
           "minimum": 128.0,
           "type": "number"

@@ -14,6 +14,14 @@
         "ingestToken": {
           "description": "Humio ingest token",
           "type": "string"
+        },
+        "dcosAuthenticationToken": {
+          "description": "DC/OS authentication token",
+          "type": "string"
+        },
+        "containerMetricsEnabled": {
+          "description": "Enabled pulling container metrics from DC/OS",
+          "type": "boolean"
         }
       },
       "required": [

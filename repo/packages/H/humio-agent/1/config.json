@@ -4,8 +4,9 @@
     "humio": {
       "properties": {
         "host": {
-          "description": "Humio url. i.e. go.humio.com",
-          "type": "string"
+          "description": "Humio url. i.e. https://cloud.humio.com:443",
+          "type": "string",
+          "default": "https://cloud.humio.com:443"
         },
         "dataspace": {
           "description": "Name of Humio dataspace",
